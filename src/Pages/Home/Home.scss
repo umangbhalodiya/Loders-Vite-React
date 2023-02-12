@@ -1,0 +1,22 @@
+.home_container {
+    height: 100vh;
+
+    .loaders_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1px;
+        flex-wrap: wrap;
+        background-color: rgb(78, 78, 78);
+        padding: 1px;
+
+        .loader_item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            background-color: #232323;
+            cursor: pointer;
+            border-radius: 5px
+        }
+    }
+}

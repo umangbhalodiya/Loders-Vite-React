@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Home.scss";
 import loaders from "../../Components/LoaderComponents";
 import { Modal } from "../../Components/Modals/Index";
+
 export const Home = () => {
   const [component, setComponent] = useState({});
   const [styleModal, setStyleModal] = useState(false);
@@ -18,7 +19,7 @@ export const Home = () => {
                 setStyleModal(true);
               }}
             >
-              {item.component}
+              {item?.component}
             </div>
           );
         })}

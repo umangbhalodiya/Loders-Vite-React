@@ -1,0 +1,28 @@
+.header_container {
+    background: #1b1b1b;
+    width: 100%;
+
+    .header {
+        padding: 10px 20px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 500;
+        align-items: center;
+
+        .left_section {}
+
+        .right_section {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            .right_item {
+                cursor: pointer;
+            }
+        }
+
+
+    }
+}

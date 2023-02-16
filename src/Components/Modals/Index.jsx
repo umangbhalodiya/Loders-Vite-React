@@ -16,12 +16,18 @@ export const Modal = (props) => {
         </div>
         <div className="modal_content">{loader.component}</div>
         <div className="modal_footer">
-          <button>
-            <img src={Copy} /> Html
-          </button>
-          <button>
-            <img src={Copy} /> Css
-          </button>
+          <div className="copy_header">
+            <span>Html</span>
+            <img src={Copy} />
+          </div>
+          <pre>{loader?.html}</pre>
+          <div className="copy_header">
+            <span>Css</span>
+            <img src={Copy} />
+          </div>
+          <pre>{loader?.css}</pre>
+          {/* <span>Css</span>
+          <pre>{loader?.css}</pre> */}
         </div>
       </div>
     </div>

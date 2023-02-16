@@ -42,32 +42,35 @@
 
         .modal_footer {
             color: #0D171A;
-            display: flex;
             margin: 10px;
-            column-gap: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
 
-            button {
 
-                height: 50px;
-                width: 100%;
-                border-radius: 10px;
-                border: none;
-                cursor: pointer;
-                color: #0D171A;
-                font-size: 18px;
-                font-weight: 500;
+            pre {
+                text-align: start;
+                margin: 0;
+                padding: 0;
+                // white-space: inherit;
+            }
+
+            .copy_header {
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                column-gap: 15px;
-                background: #e4e4e4;
-                outline: none;
+                justify-content: space-between;
+                width: 100%;
+                padding: 5px;
+                background-color: #dedede;
+
+                span {
+                    text-align: start;
+                }
 
                 img {
                     height: 25px;
+                    cursor: pointer;
                 }
             }
-
         }
     }
 }
